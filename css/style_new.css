@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/ProximaNova-Reg.ttf');
+  src: url('fonts/ProximaNova-Reg.ttf')  format('truetype');
+}
+
+html, body {
+  height: 100%; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+html,
+body {
+  font-size: 100%; 
+}
+
+body {
+  background: white;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  font-family: 'Proxima Nova', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default; 
+}
+
+a:hover {
+  cursor: pointer; 
+}
+
+#master {
+  position:fixed;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100%;
+  background:rgba(205, 205, 205, 0.5);
+}
+
+
+.navSet {
+  position: absolute;
+  height: 100%;
+}
+
+.navItem {
+  position: relative;
+  max-width: 100px;
+  height: 100%;
+  border-right: 1px black solid;
+  float:left;
+}
+
+.halfCircle {
+  border-bottom-right-radius: 90px;
+  border-top-right-radius: 90px;
+  height: 90px;
+  width: 45px;
+  position: relative;
+  top: 50%;
+  margin-top: -45px;
+}
+
+.navItem.contact .halfCircle {
+  background-color: red;
+}
+
+.navItem.page1 .halfCircle {
+  background-color: green;
+}
+
+.navItem.page2 .halfCircle {
+  background-color: yellow;
+}
+
+
+/* .navItem.toleft {
+  margin-left: -20px;
+}
+
+.navItem.lastItem {
+  margin-left: 0px;
+} */
